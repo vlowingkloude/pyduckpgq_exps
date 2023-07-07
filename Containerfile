@@ -32,11 +32,11 @@ RUN pip3 install torch torchvision torchaudio --index-url https://download.pytor
 RUN pip install  dgl -f https://data.dgl.ai/wheels/repo.html
 RUN pip install  dglgo -f https://data.dgl.ai/wheels-test/repo.html
 WORKDIR /duckexp/data/
-COPY pyduckpgq/new.py /duckexp/data/duckpgq.py
+COPY pyduckpgq/duckpgq.py /duckexp/data/duckpgq.py
 RUN pip install polars pyarrow
 RUN pip install torch_geometric
 RUN pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.0.0+cpu.html
-COPY decorators.py /duckexp/data/
+COPY pyduckpgq/decorators.py /duckexp/data/
 COPY bench_framework.py /duckexp/data/
 COPY data_loaders.py /duckexp/data/
 COPY genquery.py /duckexp/data
