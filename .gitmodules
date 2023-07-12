@@ -1,3 +1,6 @@
 [submodule "pyduckpgq"]
 	path = pyduckpgq
 	url = https://github.com/vlowingkloude/pyduckpgq.git
+[submodule "duckpgq"]
+	path = duckpgq
+	url = https://github.com/cwida/duckpgq-extension.git
